@@ -1,0 +1,34 @@
+## largest element in array 
+
+public class programs{
+    public static void main(String[] args) {
+        int[] arr={1,8,10,12,14};
+        int max=0;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]>max) max=arr[i];
+
+        }
+        System.out.println(max);
+    }
+}
+
+## second largest 
+
+public class programs {
+    public static void main(String[] args) {
+        int arr[]={1,8,10,12,14};
+        int second_max=Integer.MIN_VALUE;
+        int max=Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]>max) {
+                second_max=max;
+                max=arr[i];
+            }
+            else if(arr[i]<max &&arr[i]>second_max)
+                second_max=arr[i];
+
+
+        }
+        System.out.println(second_max);
+    }
+}
