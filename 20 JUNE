@@ -39,3 +39,44 @@ class Solution {
     }
 }
 ______________________________________________________________________________________________________________________________________________________________
+## QUES  
+
+class Solution {
+
+    static Boolean isSubsetSum(int arr[], int sum) {
+        return helper(arr, sum, 0);
+    }
+
+    static Boolean helper(int[] arr, int sum, int i) {
+
+        if(sum == 0)
+            return true;
+
+        if(i == arr.length)
+            return false;
+
+
+        if(arr[i] <= sum) {
+            if(helper(arr, sum - arr[i], i + 1))
+                return true;
+        }
+
+        
+        return helper(arr, sum, i + 1);
+    }
+}
+_______________________________________________________________________________________________________________________________________________________________
+## QUES LEETCODE 70 
+
+class Solution {
+    public int climbStairs(int n) {
+        return solve(n);
+    }
+    int solve(int n){
+        if(n==0) return 1;
+        if(n<0) return 0;
+        int sum= climbStairs(n-1)+climbStairs(n-2);
+        return sum;
+    }
+}
+__________________________________________________________________________________________________________________________________________________________
