@@ -80,7 +80,7 @@ class Solution {
     }
 }
 __________________________________________________________________________________________________________________________________________________________
-## QUES LEETCODE 51
+## QUES LEETCODE 51   N QUEEN
 
 class Solution {
     public List<List<String>> solveNQueens(int n) {
@@ -131,7 +131,7 @@ class Solution {
     
 }
 ________________________________________________________________________________________________________________________________________________________________
-## QUES LEETCODE 37
+## QUES LEETCODE 37    SUDOKU SOLVER
 
 class Solution {
 
@@ -185,7 +185,7 @@ class Solution {
     }
 }
 _______________________________________________________________________________________________________________________________________________________________
-## QUES LEETCODE 79
+## QUES LEETCODE 79     WORD SEARCH
 
 class Solution {
     public boolean exist(char[][] board, String word) {
