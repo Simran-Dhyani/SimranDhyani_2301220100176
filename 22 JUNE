@@ -1,4 +1,4 @@
-## QUES 144
+## QUES 144 PREORDER
 
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
@@ -13,6 +13,43 @@ class Solution {
         result.add(node.val);
         preorder(node.left,result);
         preorder(node.right,result);
+
+    }
+}
+_________________________________________________________________________________________________________________________________________________________________
+## QUES 94 INORDER
+
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result=new ArrayList<>();
+        inorder(root,result);
+        return result;
+    }
+    void inorder(TreeNode node,List<Integer> result){
+        if(node==null) return;
+
+        inorder(node.left,result);
+        result.add(node.val);
+        inorder(node.right,result);
+}
+}
+__________________________________________________________________________________________________________________________________________________________________
+## QUES 145 POSTORDER
+
+class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> result=new ArrayList<>();
+        postorder(root,result);
+        return result;
+    }
+    void postorder(TreeNode node,List<Integer> result){
+        if(node==null) return;
+
+       
+       
+        postorder(node.left,result);
+        postorder(node.right,result);
+         result.add(node.val);
 
     }
 }
