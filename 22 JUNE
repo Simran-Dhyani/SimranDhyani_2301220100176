@@ -81,3 +81,40 @@ class Solution {
     }
 }
 ___________________________________________________________________________________________________________________________________________________________
+## QUES LEETCODE 543 DIAMETER OF BINARY TREE
+
+class Solution {
+    public int diameterOfBinaryTree(TreeNode root) {
+        int [] diameter=new int[1];
+        height(root,diameter);
+        return diameter[0];
+    }
+    public int height(TreeNode root,int [] diameter){
+        if(root==null) return 0;
+        int lh=height(root.left,diameter);
+        int ryt=height(root.right,diameter);
+        diameter[0]=Math.max(diameter[0],lh+ryt);
+        return (1+Math.max(lh,ryt));
+    }
+}
+_________________________________________________________________________________________________________________________________________________________________
+## QUES LEETCODE 124 BINARY TREE MAXIMUM PATH SUM 
+class Solution {
+    public int maxPathSum(TreeNode root) {
+        int [] maxVal=new int[1];
+        maxVal[0]=Integer.MIN_VALUE;
+        solve(root,maxVal);
+        return maxVal[0];
+
+    }
+    int solve(TreeNode root,int[] maxVal){
+        if(root==null)  return 0;
+        int lh=Math.max(0,solve(root.left,maxVal));  // if node val is -ve 0 should be taken
+        int ryt=Math.max(0,solve(root.right,maxVal));
+        maxVal[0]=Math.max(maxVal[0],root.val+lh+ryt);
+        return (root.val+(Math.max(lh,ryt)));
+
+    }
+
+}
+_________________________________________________________________________________________________________________________________________________________________
