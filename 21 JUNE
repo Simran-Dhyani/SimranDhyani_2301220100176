@@ -1,4 +1,4 @@
-## QUES LEETCODE 876
+## QUES LEETCODE 876   MIDDLE OF LINKED LIST
 
 class Solution {
     public ListNode middleNode(ListNode head) {
@@ -16,7 +16,7 @@ class Solution {
     }
 }
 _________________________________________________________________________________________________________________________________________________________________
-## QUES LEETCODE 141 
+## QUES LEETCODE 141 LINKED LIST CYCLE
 
 public class Solution {
     public boolean hasCycle(ListNode head) {
@@ -34,7 +34,7 @@ public class Solution {
     }
 }
 ______________________________________________________________________________________________________________________________________________________________
-## QUES LEETCODE 237 
+## QUES LEETCODE 237  DELETE NODE
 
 class Solution {
     public void deleteNode(ListNode node) {
@@ -45,7 +45,7 @@ class Solution {
     }
 }
 _____________________________________________________________________________________________________________________________________________________________
-## QUES LEETCODE 206 
+## QUES LEETCODE 206  REVERSE LINKED LIST
 class Solution {
     public ListNode reverseList(ListNode head) {
     ListNode temp=head;
@@ -62,7 +62,7 @@ class Solution {
     }
 }
 _____________________________________________________________________________________________________________________________________________________________
-## QUES LEETCODE 234
+## QUES LEETCODE 234 PALINDROME LINKED LIST
 
 class Solution {
     public boolean isPalindrome(ListNode head) {
@@ -100,7 +100,7 @@ class Solution {
     }
 }
 ________________________________________________________________________________________________________________________________________________________________
-## QUES LEETCODE 496
+## QUES LEETCODE 496 NEXT GREATER ELEMENT
 
 class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
